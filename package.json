@@ -20,6 +20,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "dotenv": "^6.2.0",
+    "get-urls": "^8.0.0",
     "safe-browse-url-lookup": "0.0.4",
     "snoostorm": "0.0.5",
     "snoowrap": "^1.15.2"
