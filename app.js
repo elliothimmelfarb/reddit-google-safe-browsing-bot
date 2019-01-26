@@ -1,4 +1,8 @@
 require('dotenv').config();
+const axios = require('axios');
+const lookup = require('safe-browse-url-lookup')({
+  apiKey: process.env.GOOGLE_KEY
+});
 
 const Snoowrap = require('snoowrap');
 const Snoostorm = require('snoostorm');
@@ -26,6 +30,10 @@ const comments = client.CommentStream(streamOpts);
 
 // On comment, perform whatever logic you want to do
 comments.on('comment', comment => {
-    console.log(comment.body);
-    console.log('------------')
+    // console.log(comment.body);
+    // console.log('------------')
 });
+
+lookup.checkSingle('https://google.com')
+  .then(isMalicious => console.log(`isMalicious = ${isMalicious}`))
+  .catch(err => console.log(err))
