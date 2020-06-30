@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/elliothimmelfarb/reddit-google-safe-browsing-bot#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "dotenv": "^6.2.0",
     "get-urls": "^8.0.0",
     "safe-browse-url-lookup": "0.0.4",
